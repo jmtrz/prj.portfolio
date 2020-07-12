@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "project-my-portfolio": {
@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -119,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "project-my-portfolio"
+    }
+  },
+  "defaultProject": "project-my-portfolio",
+  "cli": {
+    "analytics": "afa3aa53-780a-4e70-b781-50e7f210a34a"
+  }
 }

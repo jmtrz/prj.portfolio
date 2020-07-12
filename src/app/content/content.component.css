@@ -1,0 +1,397 @@
+
+/*First section of the page*/
+.main-info-section{
+    /* margin-top: 81.6px; */
+    height : calc(108.4vh - 81.6px);
+}
+/*Inside the main-info-section*/
+.text{
+    margin-top:120px;
+    /* padding-left: 10%; */
+    margin:auto;
+    padding: 0 430px 0 430px;
+    
+}
+/*Inside the main-info-section with H1 */
+.text h1{
+    color: #fff;
+    font-size:3rem;
+    cursor:context-menu;
+}
+.text h5{
+    color: khaki;
+}
+
+/*Inside the main-info-section with SPAN */
+.text span{
+    display: inline-block;
+}
+/*Inside the main-info-section with SPAN */
+span:hover{
+    color:#4BCFAd;
+    transition:all .5s;
+}
+/*Inside the main-info-section with SPAN */
+span.name{
+    color:#ED5565;
+}
+/*Inside the main-info-section with SPAN */
+span.m-left{
+    margin-left:5px;
+}
+/*Inside the main-info-section with SPAN every first letter */
+span.first{
+    padding-left: 20px;
+}
+/*Inside the main-info-section paragraph section*/
+.text p{
+    letter-spacing: 4px;
+    word-spacing: 10px;
+    font-size:0.8rem;
+    color: blanchedalmond;
+}
+
+/*Contact button*/
+.text a{
+    padding: 10px 25px;
+    background-color:none;
+    border:6px solid #ED5565;
+    columns: #ed55ed;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    position: relative;
+    top: 60px;
+    overflow: hidden;
+    transition:.5s;
+    display:inline-block; 
+    color: cornsilk;
+    border-radius: 10px;
+}
+/*Inside the main-info-section contact me button hover effect*/
+.text a:hover{
+    color : #fff;
+}
+/*Inside the main-info-section contact me button hover before effect*/
+.text a::before{
+    content:'';
+    background-color: #ED5565;
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 0%;
+    z-index: -1;
+    transition: .5s;
+}
+/*Inside the main-info-section contact me button hover effect*/
+.text a:hover::before{
+    height:100%;
+}
+/*Inside the main-info-section Image*/
+.profile-image img{
+    max-width:600px;
+    margin-top:125px;
+    position: relative;
+    /* right:25px; */
+
+}
+
+
+/*About Section*/
+ .about{
+    height : calc(108.4vh - 81.6px);
+    padding-top:200px;
+}
+
+.about h1,
+.work h1{
+    font-size: 10rem;
+    z-index:0;
+    opacity:.05;
+    color: ghostwhite;
+}
+
+.about-me-info{
+    max-width: 900px;
+    background-color: #242627;
+    box-shadow: 0 0 1.2rem rgba(0,0,0,.25);
+    padding: 50px;
+    position: relative;
+    top: -70px;
+    left:50%;
+    right:50%;
+    transform:translateX(-50%);
+    z-index:1;
+}   
+
+.about-me-info p{
+    font-size: 1.3rem;
+    color: #BEBEBE;
+}
+
+.about-me-info p:nth-child(2),
+.about-me-info p:last-child{
+    margin-top: 30px;
+}
+
+.about img{
+    width : 300px;
+    position: relative;
+    top: -300px;
+    left:calc(100%-100px);
+    right : calc(100%+ 100px);
+    transform : translateX(-100% = 100px);
+}
+
+
+/*Skills Section*/
+.skills{
+    height : calc(108.4vh - 81.6px);
+    padding-top:300px;
+}
+
+.list-group{
+    padding: 0 0 0 0;
+}
+.list-group-item{
+    box-shadow: 0 0 1.2rem rgba(0,0,0,.25);
+    background-color: rgba(0,0,0,.25);
+    max-width: 150px;
+}
+
+.skills h3,
+.contact h1 {
+    text-align : left;
+    font-size:2.6rem;
+    opacity: .3;
+    color: ghostwhite;
+}
+
+#job-description{
+    color: greenyellow;
+    
+}
+.job-description{
+    /* background-color: grey; */
+    box-shadow: 0 0 1.2rem rgba(0,0,0,.25);
+    border-radius: 10px;
+}
+
+.skills h4{
+    color: white
+}
+.skills li{
+    color: wheat;
+}
+
+/* .skills-info{
+    font-size: 1.3rem;
+    max-width: 800px;
+    position: relative;
+    left:40%;
+    right:55%; 
+    transform: translateX(-50%);
+    text-align: left;
+    margin-bottom: 50px;
+    color: ghostwhite;
+} */
+
+.skills-info2{
+    font-size: 1.3rem;
+    position: relative;
+    /* left:40%; */
+    /* right:55%; */
+    /* transform: translateX(-50%); */
+    text-align: left;
+    margin-bottom: 50px;
+    color: ghostwhite;
+}
+
+
+.skill-set{
+   max-width: auto;
+}
+.html{
+    display : flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    max-width: 130px;
+    margin-right:0.7rem;
+}
+
+#skill-icon{
+    max-width: 100%;
+    height: auto;
+    position: relative;
+}
+
+
+div[class^='tag-']{
+    clip-path:polygon(75%, 100%, 50%, 75%, 100% ,0%, 100%,0%,50%,0%,0%);
+    width:120px;
+    height:auto;
+    /* background-color: #535353; */
+    box-shadow: 0 0 1.2rem rgba(0,0,0,.25);
+    /* margin-right: 30px; */
+}
+
+div[class^='tag-'] p{
+    color : #fff;
+    text-align: left;
+    padding-left:10px;
+    font-size: 1.1rem;
+    padding-top: 3px;
+}
+
+.progressbar{
+    position: relative;
+    width: 600px;
+    height:20px;
+    border:2px solid #abcfad;
+    border-radius: 20px;
+    margin-top:35px;
+
+}
+
+div[class^=bar-]{
+    position: absolute;
+    background-color: #abcfad;
+    height: 10px;
+    border-radius: 20px;
+    margin:2.2px;
+}
+
+/*Notable Projects*/
+
+.projects{
+    height : calc(108.4vh - 81.6px);
+    padding-top:300px;
+}
+
+.projects h3{
+    color: ghostwhite;
+    text-align: center;
+    box-sizing: inherit;
+}
+
+.card{
+    /* margin-right: auto; */
+    margin-right: 20px;
+    background-color: rgb(41, 49, 63);
+    color: rgb(206, 202, 202);
+    max-width: auto;
+}
+.card-body p{
+    font-size: smaller;
+}
+.tech{
+    position: relative;
+}
+
+.work-category button{
+    text-transform: capitalize;
+    border: 3px solid #3f3d3d;
+    padding: 15px 30px;
+    border-radius: 50px;
+    color: #ed5565;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    background-color: #252627;
+    outline: none;
+    cursor: pointer;
+}
+
+div[class^='category-']{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+}
+
+.work a{
+    justify-self:center;
+    position: relative;
+    display:inline-block;
+}
+
+.work-category .active{
+    background-color: #ed5565;
+}
+
+button.active{
+    color:#fff;
+}
+
+.work a img{
+    width:350px;
+    justify-self: center;
+}
+
+div.hideCategory{
+    display:none;
+}
+
+.showCategory{
+    display: block;
+}
+
+#contact{
+    margin-top : 50px;
+    height : calc(100vh - 81.6px);
+    padding-bottom: 150px;
+    padding-top: 150px;
+    /* margin-right: 303px;
+    margin-left: 303px; */
+    width: 700px;
+}
+
+.contact h1{
+    text-align: center;
+}
+.contact-me{
+    color: ghostwhite;
+    margin-top: 20px;
+    text-align: center;
+    height: 25vh;
+}
+
+.contact a{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border-color: wheat;
+    text-decoration: none;
+    padding: 1em 1.5em ;
+    border-radius: 1.2px;
+    background-color: brown;
+    position: relative;
+    left: 5%;
+
+}
+
+.cnt-button{
+    height: 20px;
+}
+
+.contact a:active{
+    background-color:#4BCFAd;
+    color: black;
+}
+
+.contact a:hover{
+    background-color:#4BCFAd;
+    color: black;
+}
+
+.footer hr{
+    border: 2px solid #707070;
+    margin-top:150px;
+
+}
+#footer{
+    margin-top:75px;
+}
+footer p {
+    text-align:center;
+    color:#707070;
+    font-size:1.2rem;
+    padding:30px 0;
+} 
