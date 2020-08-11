@@ -9,17 +9,57 @@
     margin-top:120px;
     /* padding-left: 10%; */
     margin:auto;
-    padding: 0 430px 0 430px;
+    /* padding: 0 30% 0 30%; */
+    max-width: 800px;
     
 }
 /*Inside the main-info-section with H1 */
 .text h1{
     color: #fff;
-    font-size:3rem;
+    font-size:8vh;
     cursor:context-menu;
+}
+
+@media screen and (max-width:767px){
+    .text h1{
+        font-size:7.5vh;
+    }
+}
+
+@media screen and (max-width:760px){
+    .text h1{
+        font-size:7.2vh;
+    }
+}
+@media screen and (max-width:640px){
+    .text h1{
+        font-size:6vh;
+    }
+}
+@media screen and (max-width:570px){
+    .text h1{
+        font-size:5vh;
+    }
+}
+
+@media screen and (max-width:400px){
+    .text h1{
+        font-size:4vh;
+    }
 }
 .text h5{
     color: khaki;
+}
+/*Mobile Screen*/
+@media screen and (max-width:400px){
+    .text h5{
+        font-size:1.5vh;
+    }
+}
+@media screen and (max-width:560px){
+    .text h5{
+        font-size:2vh;
+    }
 }
 
 /*Inside the main-info-section with SPAN */
@@ -45,10 +85,22 @@ span.first{
 }
 /*Inside the main-info-section paragraph section*/
 .text p{
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     word-spacing: 10px;
-    font-size:0.8rem;
+    font-size:1.5vh;
     color: blanchedalmond;
+}
+
+@media screen and (max-width:770px){
+    .text p{
+        font-size:0.6rem;
+    }
+}
+
+@media screen and (max-width:675px){
+    .text p{
+        font-size:0.58rem;
+    }
 }
 
 /*Contact button*/
