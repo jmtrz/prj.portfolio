@@ -109,12 +109,25 @@ span.first{
 @media screen and (max-width:770px){
     .text p{
         font-size:0.6rem;
+        word-spacing: 5px;
+        letter-spacing: 1px;
     }
 }
 
 @media screen and (max-width:675px){
     .text p{
         font-size:0.58rem;
+        word-spacing: 5px;
+        letter-spacing: 1px;
+    }
+}
+
+
+@media screen and (max-width:440px){
+    .text p{
+        font-size:0.45rem;
+        word-spacing: 5px;
+        letter-spacing: 1px;
     }
 }
 
@@ -170,6 +183,12 @@ span.first{
     height : calc(107vh - 90.6px);
 }
 
+@media screen and (max-width:600px){
+    .about{
+        /* height : calc(108.4vh - 81.6px); */
+        height : calc(112vh - 90.6px);
+    }
+}
 .aboutMe{
     max-width: 130vh;
 }
@@ -208,7 +227,7 @@ span.first{
 #myself{
     max-width: 100%;
     /* margin-top:5%; */
-    margin:2%;
+    margin:auto;
 }
 
 .about-me-info{
@@ -227,7 +246,7 @@ span.first{
 @media screen and (max-width:600px){
     .about-me-info{
         padding: 10px;
-        width:45vh;
+        /* width:45vh; */
         top: 0px;
     }
 }
@@ -238,7 +257,13 @@ span.first{
 }
 
 @media screen and (max-width:600px){
-    .about-me-info p{
+    .about-me-info div p{
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width:450px){
+    .about-me-info div p{
         font-size: 0.7rem;
     }
 }
@@ -268,7 +293,7 @@ span.first{
 
 @media screen and (max-width:600px){
     .skills{
-        height : calc(132vh - 90.6px);
+        height : calc(160vh - 90.6px);
     }
     
 }
@@ -461,6 +486,12 @@ div[class^=bar-]{
     /* padding-top:300px; */
 }
 
+@media screen and (max-width:600px){
+    .projects{
+        height : calc(140.4vh - 81.6px);
+        /* padding-top:300px; */
+    }
+}
 .projects h3{
     color: ghostwhite;
     text-align: center;
@@ -612,6 +643,9 @@ div.hideCategory{
         max-width: 35vh;
         margin:auto;
     }
+    .contact-me{
+        height: 20vh;
+    }
 }
 .cnt-button{
     /* margin-top:4%; */
@@ -632,7 +666,7 @@ div.hideCategory{
     }
     .cnt-button{
         /* margin-top:4%; */
-        height: 90px;
+        height: 80px;
         max-width: 25vh;
     }
 

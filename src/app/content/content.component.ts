@@ -7,11 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContentComponent implements OnInit {
   
-  // ImagePath : string = 'https://s3.amazonaws.com/StartupStockPhotos/uploads/26.jpg';
-  ImagePath : string = './assets/vr.jpg';
-  ContactImage : string = '/assets/dev.png';
-  email : string = "/assets/email.png";
-  
+  ContactImage : string = 'assets/dev.png';
+  email : string = "assets/email.png";
+  AboutMe = "assets/design_thinking.jpg";
+
   constructor() { }
 
   ngOnInit(): void {
