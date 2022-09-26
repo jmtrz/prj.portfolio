@@ -9,6 +9,56 @@ body{
 }
 
 /*************************
+ * GEBERAL 
+ *************************/
+
+.grid{
+    display: grid;
+    column-gap: 6.4rem;
+    row-gap: 9.6rem;
+}
+
+.container {
+    /* 1140px */
+    max-width: 120rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+}
+  
+.grid--2-cols{
+    grid-template-columns: repeat(2,1fr);
+}
+
+.primary-heading{
+    color: white;
+    font-size: 8.2rem;
+    font-weight: 900;
+}
+.secondary-heading{
+    font-size: 4.8rem;
+}
+.tertiary-heading{
+    font-size: 3.2rem;
+}
+
+.sub-heading{
+    font-size: 2.9rem;
+    color: white;
+}
+
+.sub-about {
+    font-size: 1.4rem;
+}
+
+.card{
+    background-color: #25283D;
+    border-radius: 1.2rem;
+    border: 1px solid black ;
+    width: 100%;
+    height: 100%;    
+}
+
+/*************************
  * HEADER 
  *************************/
 /* .logo{
@@ -47,8 +97,9 @@ header{
     text-decoration: none;
     color: #fff;
 }
-/**************************/
-
+/**************************
+* Hero Section
+**************************/
 .hero-section{
     height: 100vh;
     background-color: #25283D;
@@ -86,29 +137,113 @@ header{
     gap: 3rem;
 }
 
-.primary-heading{
-    color: white;
-    font-size: 6.4rem;
-}
-
-.sub-heading{
-    font-size: 2.4rem;
-    color: white;
-}
-
 .social-icon{
     color: white;
     font-size: 3.6rem;
 }
 
 /******************
+ * About Me and Skills Section
+ ******************/
+.about-section{
+    height: 200vh;    
+}
+
+.about-me-heading{
+    align-items: center;
+    justify-content: center; 
+    margin-bottom: 6.2rem;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding:  0 4.2rem;   
+}
+
+.me-img{    
+    grid-template-columns: repeat(5,1fr);    
+}
+
+.popup-img{
+    height: 16.2rem;
+    grid-column: 2/3;           
+}
+
+.person-img{
+    height: 39.2rem;
+    grid-column: 2/4;    
+}
+
+.popup-img, .person-img{
+    grid-row: 2/4;
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.skill-list{
+    display: flex;
+    gap: 0.2rem;
+    align-items: center;
+}
+.skill-item{
+    font-size: 1.8rem;
+    padding: 1.8rem;
+    font-weight: bold;
+}
+.skill{    
+    font-size: 1.4rem;
+    padding: 0.6rem;
+    background-color: grey;
+    color: white;
+    line-height: 2.5;
+    
+    
+    border-radius: 0.8rem;
+    width: auto;
+}
+
+/******************
+ * Project Section
+ ******************/
+ .project-section{
+    height: 100vh;
+    background-color: #171926;
+    margin: 0 auto;
+    padding:  0 9.8rem;
+ }
+
+ .project-section h2,
+ .project-section p{
+    color: white;
+ }
+
+ .project-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    margin-bottom: 2.4rem;
+ }
+
+ .project-list{
+    grid-template-columns: repeat(3,1fr);
+ }
+
+/******************
  * Animation Area
  ******************/
 
  .animation-area{
-    background: linear-gradient(to left,#8942a8,#ba382f);
+    /* background: linear-gradient(to left,#8942a8,#ba382f); */
     /* width: 100%; */
-    height: 100vh;
+    /* height: 100vh; */
  }
 
  .box-area{
