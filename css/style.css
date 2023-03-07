@@ -95,12 +95,14 @@ hr{
 header{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;    
     background-color: #171926;
 
     padding: 0 9.8rem;
     height: 9.6rem;
     position: relative;
+
+    transition: all 0.50s ease-in;
 }
 
 .logo {
@@ -124,8 +126,6 @@ header{
   vertical-align: middle;
   margin: 0 5px;
 }
-
-
   
 .nav-list{
     list-style: none;
@@ -133,7 +133,7 @@ header{
     gap: 6rem;
     align-items: center;
     /* font-size: 1.75rem; */
-    font-size: clamp(0.5rem, -0.3108rem + 2.7027vw, 1.75rem); 
+    font-size: clamp(1rem, -0.3108rem + 2.7027vw, 1.75rem); 
     font-weight: 900;
 }
 
@@ -144,12 +144,18 @@ header{
     color: #fff;
 }
 
-.nav-button-mobile{
+.nav-button-mobile{  
     display: none;
-    background-color: none;
+    background-color: transparent;
     border: none;
     cursor: pointer;
+    font-size: clamp(2.5rem, 2.2353rem + 0.8824vw, 2.8rem);    
+    color:#fff;    
+    
+    height: 2.8rem;       
 }
+
+
 /**************************
 * Hero Section
 **************************/
@@ -211,7 +217,7 @@ header{
  * About Me and Skills Section
  ******************/
 .about-section{
-    height: 130vh;
+    height: 100vh;
     /* background-color: #39438E; */
     color: #F5E6E8;
     /* background-image: linear-gradient(
@@ -268,8 +274,8 @@ header{
     flex-direction: column;
     justify-content: center; */
     place-items: center;    
-    gap: 0;
-    /* padding: 0 15rem 0 15rem; */
+    gap: 1%;
+    padding: 0 15% 0 15%;
 }
 
 .skill-list{
