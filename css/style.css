@@ -1,27 +1,22 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;    
 }
 
 body{
-    font-family: 'Lato';
+    font-family: 'Lato';    
 }
 
 /*************************
  * GEBERAL
  *************************/
 
+ /*#region General-Section*/
 .grid{
     display: grid;
-    column-gap: 6.4rem;
-    row-gap: 9.6rem;
-}
-
-.grid-mod{
-    display: grid;
-    /* column-gap: 4.4rem; */
-    /* row-gap: 4.6rem; */
+    column-gap: 2.4rem;
+    row-gap: 2.4rem;
 }
 
 .container {
@@ -38,8 +33,6 @@ body{
 .grid--3-cols{
     grid-template-columns: repeat(3,1fr);
 }
-
-
 
 .primary-heading{
     color: white;
@@ -74,10 +67,12 @@ body{
 } */
 
 hr{
-    height: 0.3rem;
+    height: 100%;
     background-color: #fff;
-    margin: 0.4rem 0;
+    /* margin: 0.4rem 0; */
 }
+
+/*#endregion General-Section*/
 
 /*************************
  * HEADER
@@ -87,6 +82,7 @@ hr{
     background-image: url("data:image/svg+xml,%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 202.666 231.359'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23231f20;%7D.cls-2%7Bfill:none;stroke:%23231f20;stroke-miterlimit:10;stroke-width:16px;%7D%3C/style%3E%3C/defs%3E%3Cpolygon class='cls-1' points='108.152 128.674 0 64.428 105.785 0 191.701 52.081 183.406 65.763 105.805 18.722 31.04 64.257 107.937 109.937 138.127 91.054 106.344 75.033 113.546 60.746 170.699 89.554 108.152 128.674'/%3E%3Crect class='cls-1' x='113.449' y='177.497' width='16' height='36.042'/%3E%3Cpolygon class='cls-1' points='122.441 225.229 113.537 211.935 186.666 162.955 186.666 104.584 146.872 130.262 138.197 116.817 202.666 75.218 202.666 171.496 122.441 225.229'/%3E%3Cpolygon class='cls-1' points='99.352 226.883 2.337 172.618 0.181 70.638 107.374 134.969 99.14 148.688 16.79 99.266 18.14 163.125 107.162 212.919 99.352 226.883'/%3E%3Cpath class='cls-2' d='M233.894,332.447' transform='translate(-126.871 -100.291)'/%3E%3Cpolygon class='cls-1' points='107.392 135.017 87.629 141.589 107.461 154.241 107.392 135.017'/%3E%3Cpolygon class='cls-1' points='107.164 212.919 87.018 219.875 107.142 231.359 107.164 212.919'/%3E%3Cpolygon class='cls-1' points='113.482 212.305 134.342 217.22 113.505 231.178 113.482 212.305'/%3E%3Cpolygon class='cls-1' points='123.579 65.853 106.219 56.84 106.362 75.007 123.579 65.853'/%3E%3Cpolygon class='cls-1' points='154.372 125.066 138.203 116.832 138.203 136.683 154.372 125.066'/%3E%3Cpolygon class='cls-1' points='175.403 60.832 191.348 70.533 191.775 52.128 175.403 60.832'/%3E%3Cpolygon class='cls-1' points='129.462 177.478 113.435 163.428 113.435 186.598 129.462 177.478'/%3E%3C/svg%3E");
 } */
 
+ /*#region Header-Section*/
 #mylogo{
     height: 5.4rem;
     color: #fff;
@@ -155,10 +151,14 @@ header{
     height: 2.8rem;       
 }
 
+ /*#endregion Header-Section*/
 
 /**************************
 * Hero Section
 **************************/
+
+/*#region Hero-Section*/
+
 .hero-section{
     height: 100vh;
     background-color:#171926; /*#25283D;*/
@@ -213,11 +213,15 @@ header{
     font-size: clamp(1.9rem, 1.7348rem + 1.7281vw, 3.6rem);
 }
 
+/*#endregion Hero-Section*/
+
 /******************
  * About Me and Skills Section
  ******************/
+
+ /*#region AboutMe-and-Skill-Section*/
 .about-section{
-    height: 100vh;
+    min-height: 100vh;
     /* background-color: #39438E; */
     color: #F5E6E8;
     /* background-image: linear-gradient(
@@ -228,22 +232,28 @@ header{
         #25283D 100%
     ); */
     background-color: #171926;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.about-section>h2{
+    text-align: center;
+    font-size: 4rem;
 }
 
-.details{
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;  */
-    padding: 4.2rem 12rem 4.2rem 14rem;      
+.details{    
+    padding: 4.2rem 12% 4.2rem 12%;      
+    column-gap: 0;
 }
 
 .details-info{
     text-align: center;
-    font-size: clamp(1.1rem, -0.4058rem + 2.0194vw, 1.5rem);
+    font-size: clamp(1rem, -0.4058rem + 2.0194vw, 1.2rem);
 }
 
 .high-light-font{
-    font-size: 4.125rem;
+    font-size:clamp(3rem, -0.4058rem + 2.0194vw, 4rem);
     color: #00C1FF;
 }
 
@@ -270,12 +280,9 @@ header{
 }
 
 .skills{
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
     place-items: center;    
     gap: 1%;
-    padding: 0 15% 0 15%;
+    padding: 0 12% 0 12%;
 }
 
 .skill-list{
@@ -283,11 +290,6 @@ header{
     gap: 0.2rem;
     align-items: center;
 }
-/* .skill-item{
-    font-size: 1.8rem;
-    padding: 1.8rem;
-    font-weight: bold;
-} */
 
 .skill-set{
     padding-top: 0.5rem;
@@ -321,8 +323,15 @@ header{
 }
 
 .skill-card{
-    width: 25rem;
-    height: 30rem;
+    width: 100%;
+    height: 100%;
+
+    min-width: 18rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
 }
 
 .skill-card #dev-icon{
@@ -334,9 +343,10 @@ header{
 
 
 .skill-card h2{
-    font-size: 2.3rem;
+    font-size: clamp(1.6rem, 1.4572rem + 0.0297vw, 2rem);
     line-height: 1;
     text-align  : center;
+    width: 100%;
 }
 
 .skill-set-section{
@@ -351,11 +361,16 @@ header{
     
 }
 
-/******************
+ /*#endregion AboutMe-and-Skill-Section*/
+
+
+ /******************
  * Project Section
  ******************/
+
+  /*#region Project-Section*/
  .project-section{
-    height: 100vh;
+    height: 100%;    
     background-color: #171926;
     /* background: linear-gradient(
         to right,
@@ -365,6 +380,7 @@ header{
         #171926 100%
     ); */
     margin: 0 auto;
+    padding: 10% 0 10% 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -382,16 +398,15 @@ header{
  .project-section p{
     color: white;
  }
+ 
+ .project-section h2 {
+    font-size: 4rem;
+ 
+}
 
- /* .web-page{
-    max-width: 50rem;
-    margin: 10rem 0;
- } */
-
- .project-heading{
-    
- }
-
+.project-section>.grid {
+    padding: 0 5% 0 5%;
+}
  .project-list{
     color: #fff;
     font-size: 4.2rem;
@@ -419,8 +434,8 @@ header{
     position: relative;
     border: 2px solid #ffffff;
     border-radius: 1rem;
-    width: 30rem;  
-    min-height: 14rem; 
+    max-width: 25rem;  
+    max-height: 16rem; 
     overflow: hidden; 
  }
 
@@ -440,14 +455,19 @@ header{
     align-items: center;
     justify-content: center;
  }
+
+ .project-details>p{
+    font-size: 1.2rem;
+    font-weight: bold;
+ }
  
 
-
+/*#endregion Project-Section*/
 
  /**********************
   contact-me-section
 ***********************/
-
+/*#region ContactMe-Section*/
 .contact-me-section{
     height: 100vh;
     background-color: #171926;
@@ -457,7 +477,9 @@ header{
 .contact-me-contents{
     height: 100%;
 
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    gap:10rem;
     justify-content: center;
     align-items: center;
 }
@@ -468,16 +490,23 @@ header{
     align-items: center;
 }
 
-.contact-me-heading h1{
-    font-size: 5rem;
+.contact-me-heading h2{
+    font-size: clamp(2.5rem, 0.2941rem + 7.3529vw, 5rem);
 }
 
 .contact-me-heading h3{
-    font-size: 1.5rem;
+    font-size: clamp(0.9rem, -0.1941rem + 2.6471vw, 1.5rem);
 }
 
-.contact-icon{    width: 5rem;
+.contact-icon{    
+    width: 5rem;
     height: 5rem;
+}
+
+.contact-icons-list{
+    display: flex;
+    column-gap: 6rem;    
+    justify-content: center;
 }
 
 .contact-bg{
@@ -495,11 +524,13 @@ header{
     display: flex;
     justify-content: center;
 }
-
+/*#endregion ContactMe-Section*/
 
 /******************
  * Animation Area
  ******************/
+
+/*#region Animation-Section*/
 
  .animation-area{
     /* background: linear-gradient(to left,#8942a8,#ba382f); */
@@ -581,3 +612,5 @@ header{
         opacity: 1;
     }
  }
+
+ /*#endregion Animation-Section*/
