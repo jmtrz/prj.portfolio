@@ -8,6 +8,11 @@ body{
     font-family: 'Lato';    
 }
 
+:root {
+    --backgroundColor : #171926;
+    --textColor : #fff;
+}
+
 /*************************
  * GEBERAL
  *************************/
@@ -68,7 +73,7 @@ body{
 
 hr{
     height: 100%;
-    background-color: #fff;
+    background-color: var(--textColor);
     /* margin: 0.4rem 0; */
 }
 
@@ -85,14 +90,14 @@ hr{
  /*#region Header-Section*/
 #mylogo{
     height: 5.4rem;
-    color: #fff;
+    color: var(--textColor);
 }
 
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;    
-    background-color: #171926;
+    background-color: var(--backgroundColor);
 
     padding: 0 9.8rem;
     height: 9.6rem;
@@ -137,7 +142,7 @@ header{
 .nav-link:visited{
     display: inline-block;
     text-decoration: none;
-    color: #fff;
+    color: var(--textColor);
 }
 
 .nav-button-mobile{  
@@ -161,7 +166,7 @@ header{
 
 .hero-section{
     height: 100vh;
-    background-color:#171926; /*#25283D;*/
+    background-color: var(--backgroundColor); /*#25283D;*/
     /* padding: 4.8rem 0 9.6rem 0; */
 }
 
@@ -231,7 +236,7 @@ header{
         #25283D 50%,
         #25283D 100%
     ); */
-    background-color: #171926;
+    background-color: var(--backgroundColor);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -371,7 +376,7 @@ header{
   /*#region Project-Section*/
  .project-section{
     height: 100%;    
-    background-color: #171926;
+    background-color: var(--backgroundColor);
     /* background: linear-gradient(
         to right,
         #39438E 0%,
@@ -391,24 +396,29 @@ header{
 
 .project-section>h1{
     font-size: 5rem;
-    color: #fff;
+    color: var(--textColor);
 }
 
  .project-section h2,
  .project-section p{
-    color: white;
+    color: var(--textColor);
  }
  
  .project-section h2 {
     font-size: 4rem;
- 
+}
+
+.project-heading p {
+    font-size: 1.5rem;
+    color: grey;
+    text-align: center;
 }
 
 .project-section>.grid {
     padding: 0 5% 0 5%;
 }
  .project-list{
-    color: #fff;
+    color: var(--textColor);
     font-size: 4.2rem;
     /* margin-top: 10rem ;
     margin-bottom: 8rem; */
@@ -464,14 +474,87 @@ header{
 
 /*#endregion Project-Section*/
 
+/*******************
+* Services Section
+********************/
+
+/*#region services-section*/
+.services-section{
+    background-color: var(--backgroundColor);
+    color: var(--textColor);
+    height: 100%;
+    margin: 0 auto;
+    padding: 5%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 5rem; */
+}
+
+.services-heading{
+    padding: 2% 0 2% 0;
+}
+
+.services-heading h2,
+.services-heading p{    
+    text-align: center;
+}
+
+.services-heading h2{
+    font-size: 3rem;
+}
+
+.services-heading p{    
+   font-size: 1.5rem;
+   line-height: 2;
+}
+
+.services-offers{
+    justify-content: center;
+    
+    padding: 0 10% 0 10%;
+}
+
+.services-offers.grid{
+    column-gap: 2rem;
+}
+
+.service-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    border: 0.1rem solid #1384b1;
+    border-radius: 0.5rem;  
+    min-width: 20rem;
+    /* width: 25rem; */
+}
+
+.service-card-header{
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.service-card-body{
+    padding: 1rem;
+}
+.service-card-body ul>li{
+    list-style: none;
+    line-height: 4;
+}
+
+
+/*#endregion services-section*/
+
  /**********************
   contact-me-section
 ***********************/
 /*#region ContactMe-Section*/
 .contact-me-section{
     height: 100vh;
-    background-color: #171926;
-    color: #fff;
+    background-color: var(--backgroundColor);
+    color: var(--textColor);
 }
 
 .contact-me-contents{
@@ -512,7 +595,7 @@ header{
 .contact-bg{
     width: 8rem;
     height: 8rem;
-    background-color: #fff;
+    background-color: var(--textColor);
     border-radius: 50%;
     display: flex;
     align-items: center;
