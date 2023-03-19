@@ -11,6 +11,12 @@ var navList = document.querySelector('.nav-list');
 
 var customBorderButtom = "2px solid #00C1FF";
 
+
+function init(){
+  allButton.style.borderBottom = customBorderButtom;
+}
+
+init();
 // Check if the button element exists
 if (button) {
   // Simulate a click event on the button element
@@ -75,19 +81,5 @@ function clearAllBorderBottom() {
   mobileButton.style.borderBottom = "";
   cicdButton.style.borderBottom = "";
 }
-
-// function handleButtonClick(event) {
-//   console.log(event.target.innerText);
-//   let section = event.target.innerText;
-
-//   cards.forEach(function(card){
-//       if(card.classList.contains('web')){
-//         card.style.display = 'block';
-//       }else {
-//         card.style.display = 'none';
-//       }
-//     }
-//   );  
-// }
 
 
