@@ -1,11 +1,15 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;    
+    box-sizing: border-box;   
+    
+    /* overflow-x: hidden; */
+    scroll-behavior: smooth;
 }
 
 body{
     font-family: 'Lato';    
+    /* overflow-x: hidden; */
 }
 
 :root {
@@ -38,6 +42,12 @@ body{
 .grid--3-cols{
     grid-template-columns: repeat(3,1fr);
 }
+
+.grid--7-cols{
+    grid-template-columns: repeat(7,1fr);
+
+}
+
 
 .primary-heading{
     color: white;
@@ -101,14 +111,15 @@ header{
 
     padding: 0 9.8rem;
     height: 9.6rem;
-    position: relative;
+    /* position: sticky;
+    top: 0; */
 
     transition: all 0.50s ease-in;
 }
 
 .logo {
   font-family: Arial, sans-serif;
-  font-size: clamp(1.6rem, 1.2977rem + 1.0076vw, 2.1rem);/*2.1rem;*/
+  font-size: clamp(1.6rem, 1.2977rem + 1.0076vw, 1.8rem);/*2.1rem;*/
   font-weight: bold;
   color: #ffffff;
   /* background-color: #000000; */
@@ -134,7 +145,7 @@ header{
     gap: 6rem;
     align-items: center;
     /* font-size: 1.75rem; */
-    font-size: clamp(1rem, -0.3108rem + 2.7027vw, 1.75rem); 
+    font-size: clamp(1rem, -0.3108rem + 2.7027vw, 1.5rem); 
     font-weight: 900;
 }
 
@@ -286,8 +297,11 @@ header{
 
 .skills{
     place-items: center;    
-    gap: 1%;
-    padding: 0 12% 0 12%;
+    gap: 1.5%;
+    row-gap: 10%;    
+    justify-content: center;    
+    /* padding: 0 12% 0 12%;     */
+    padding: 0 40% 0 40%;    
 }
 
 .skill-list{
@@ -306,16 +320,23 @@ header{
     font-weight: bold;
     line-height: 2;
 }
-.skill{
-    font-size: 1.4rem;
-    padding: 0.6rem;
-    background-color: grey;
-    color: white;
-    line-height: 2.5;
-
-
-    border-radius: 0.8rem;
-    width: auto;
+.skill-selection{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    transition: all 0.50s ease-in;
+}
+.skill-selection .select-all{
+    border-bottom: "2px solid #00C1FF";
+}
+.skill-selection button{
+    background-color:transparent;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    color: #bbb4b4;
+    font-size: medium;
+    cursor: pointer;
 }
 
 .card{
@@ -331,7 +352,8 @@ header{
     width: 100%;
     height: 100%;
 
-    min-width: 18rem;
+    min-width: 10rem;
+    max-height: 5rem;
     
     display: flex;
     justify-content: center;

@@ -1,17 +1,21 @@
 
 /*For All sizes*/
 @media all and (min-width: 268px) and (max-width: 1024px) { 
+    body {
+        overflow-x: hidden;
+    }
+
     header{        
         transition: .2s;
     }
 
     .nav-list {
         position: absolute;
-        top: 100%;
+        top: 15%;
         right: -100%;
         width: 270px;
         height: 29vh;
-        background-color: blueviolet;
+        background-color: rgb(66, 66, 66);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -57,6 +61,21 @@
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         gap: 1rem;
+    }    
+
+    .services-offers.grid--3-cols{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 1rem;
+    }    
+
+    .services-offers {
+        padding: 0 30% 0 30%;
+    }
+
+    .skills.grid--7-cols{
+        grid-template-columns: repeat(5,1fr);
+        gap: 1rem;
     }
 
     .skill-card{
@@ -83,6 +102,24 @@
     .skill-card{
         max-width: 30rem;
     }
+
+    .skills.grid--7-cols{
+        grid-template-columns: repeat(3,1fr);
+        gap: 1rem;
+    }
+
+    /*#region services-section*/
+    .services-offers.grid--3-cols{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 1rem;
+    }    
+
+    .services-offers {
+        padding: 0 30% 0 30%;
+    }
+
+    /*#endregion services-section*/
 
     /*#region projects-section*/
     .project-section>.grid{
@@ -122,6 +159,13 @@
         gap: 1rem;
     }
     /*#endregion about-section*/
+
+    /*#region skill-section*/
+    .skills.grid--7-cols{
+        grid-template-columns: repeat(3,1fr);
+        gap: 1rem;
+    }
+    /*#endregion skill-section*/
 
     /*#region contact-section*/
     .contact-icons-list{
@@ -179,6 +223,28 @@
     }
     /*#endregion about-section*/
    
+    /*#region skill-section*/
+
+    .skills{
+        padding: 0 40% 0 40%;
+    }
+    .skills.grid--7-cols{
+        grid-template-columns: repeat(2,1fr);        
+        gap: 0.5rem;
+    }
+
+    .skill-selection{
+        padding: 0 5rem 2rem 5rem;
+    }
+    .skill-selection button{
+        padding: 10px 15px 10px 15px;
+    }
+
+    .skill-card{
+        width: 8rem;
+    }
+    
+    /*#endregion*/
 
     /*#region project-section*/     
      .project-section>.grid{
@@ -186,7 +252,7 @@
     }
     /*#endregion project-section*/
 
-    /*#region about-section*/
+    /*#region contact-section*/
 
     .contact-me-contents{
         gap:5rem;
@@ -209,14 +275,14 @@
         width: 3rem;
         height: 3rem;
     }
-    /*#endregion about-section*/
+    /*#endregion contact-section*/
 
 }
 
 @media screen and (max-width: 1360px) {
     header{
         padding: 0 5%;
-    }
+    }   
 
     .details h2:first-child{
         font-size: 1rem;
