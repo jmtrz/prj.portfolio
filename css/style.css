@@ -7,9 +7,12 @@
     scroll-behavior: smooth;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body{
     font-family: 'Lato';    
-    /* overflow-x: hidden; */
 }
 
 :root {
@@ -169,7 +172,7 @@ header{
     font-size: clamp(2.5rem, 2.2353rem + 0.8824vw, 2.8rem);    
     color:#fff;    
     
-    height: 2.8rem;       
+    max-height: 3.8rem;       
 }
 
  /*#endregion Header-Section*/

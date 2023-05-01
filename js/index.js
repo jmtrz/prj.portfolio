@@ -22,7 +22,7 @@ if (button) {
   // Simulate a click event on the button element
   button.click();
   button.addEventListener("click", () => {
-    navList.classList.toggle('open');
+    navList.classList.toggle('open');    
     console.log("this was clicked");
     
   });
